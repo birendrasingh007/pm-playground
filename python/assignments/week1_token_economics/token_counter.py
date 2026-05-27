@@ -20,7 +20,7 @@ def estimate_tokens(text):
     """Rough token estimate: ~1 token per 4 chars"""
     return len(text) // 4
 
-def get_summary(text, model, max_words=100):
+def get_summary(text, model, max_words=150):
     """Generate summary using specified model"""
     client = Anthropic()
     
